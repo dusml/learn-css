@@ -1,0 +1,139 @@
+@charset "utf-8";
+h1 {
+  color: blue;
+  font-size: 30px;
+  text-align: center;
+}
+
+.waring {
+  color: red;
+}
+
+#main-header {
+  background-color: hotpink;
+}
+
+/* 
+  선택자{
+    속성(attribute html에서 많이 불린다.(attr) / property css에서는 이와 같이 불리는 경우가 많다. (prop)) : 값(value);
+  }
+  개행 - 가독성
+*/
+
+/* 선택자 조합 (자식 선택) */
+ul {
+  background-color: yellow;
+}
+.deep-menu > li > a {
+  color: #fff;
+}
+
+
+/* sass */
+.deep-menu {
+  background-color: aqua;
+  > li {
+    background-color: aquamarine;
+    > a {
+      background-color: cadetblue;
+    }
+  }
+}
+
+.anchor {
+  color: #fff;
+}
+
+/*  */
+.sibling h2 ~ p{
+  background-color: orange;
+}
+
+.deep-menu,
+.sibling,
+.another{
+  background-color: salmon;
+}
+
+button:not(.primary){
+  background-color: hotpink;
+}
+
+/* 태그 선택자 + 속성  선택타 */
+input[type="text"]{
+  border: 1px solid #ccc;
+}
+
+a[target="_blank"]{
+  color: orange;
+}
+
+
+
+/*  */
+.pseudo{
+  background-color: tomato;
+  width: 200px;
+  /* height: 200px; */
+}
+.pseudo:hover{
+  background-color: rgb(215, 255, 71);
+}
+.pseudo > a{
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background-color: #efe444;
+}
+
+/* pseudo 안에 있는 a에 마우스를 올렸을 때 */
+.pseudo a:hover{
+  color: green;
+}
+/* pseudo에 마우스를 올렸을 때 , hover은 부모에게 주고, 자식의 값이 바뀔수 있겠끔*/
+.pseudo:hover > a{
+  color: #7c3aed;
+}
+
+.pseudo > a:focus{
+  border: 3px solid black;
+}
+
+section > ul > li{
+  background-color: pink;
+}
+/* section > ul > li:first-child{
+  background-color: #ff3758;
+}
+section > ul > li:last-child{
+  background-color: #940019;
+}
+section > ul > li:nth-child(3),
+section > ul > li:nth-child(6)
+{
+  background-color: #64eb26;
+} */
+
+/* section > ul > li:nth-child(odd)
+{
+  background-color: #c9ffb0;
+}
+  홀수만
+*/
+.pseudo > ul > li:nth-child(even)
+{
+  background-color: #c9ffb0;
+}
+/* 짝수만 */
+
+/*  */
+.pseudo-element > h2{
+  color: orange;
+}
+
+.pseudo-element > h2::before{
+  content: "⭐";
+}
+.pseudo-element > h2::after{
+  content: "🐯";
+}

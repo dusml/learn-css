@@ -1,0 +1,39 @@
+.menu > li{
+  color: #2563ed;
+}
+
+section h2 + p {
+  font-weight: 700;
+}
+
+div h2 ~ p{
+  color: #7c3aed;
+}
+
+/* input[type="email"]{
+  border: 2px solid #ef4444;
+} */
+[required]{
+  border: 2px solid #efe444;
+}
+
+a[href^="https"]{
+  color: green;
+}
+/* 
+  $은 https~로 시작되는 
+*/
+a[href$=".pdf"]{
+  color: aqua;
+}
+/* 
+  $는 .pdf로 끝나는
+*/
+a[href*="google"]{
+  color: #ffae00;
+}
+/* ~을 포함한  */
+
+div[alt$=".pp"]{
+  background-color: yellowgreen;
+}
