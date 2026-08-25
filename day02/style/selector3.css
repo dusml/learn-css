@@ -1,0 +1,29 @@
+.course-link:hover{
+  color: #ef4444;
+}
+
+.apply-button:focus{
+  outline: 3px solid #2563eb;
+  outline-offset: 3px;
+}
+
+input:checked{
+  accent-color: #2563ed;
+  /* 강조된 색상 */
+}
+
+
+button:disabled{
+  opacity: 0.5;
+}
+
+.noticce{
+  background-color: rgba(255, 166, 0, 0.575);
+}
+.noticce::before{
+  content: "📢";
+}
+
+.external::after{
+  content: "↗";
+}
