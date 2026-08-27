@@ -1,0 +1,39 @@
+.container{
+  width: 800px;
+  height: 800px;
+  border: 1px solid black;
+  display: flex;
+  /* justify-content: flex-start; 기본 값*/
+  /* justify-content: flex-end; 뒤쪽부터 작성하겠다.*/
+  /* justify-content: space-between; 사이사이를 공간으로 유연하개 움직인다.*/
+  /* justify-content: center;  가운데 정렬*/
+  justify-content: space-between;
+  /* align-items: flex-start; 기본값*/
+  /* align-items: flex-end; 끝에서 */
+  align-items: center;
+  /* align-content: space-between; */
+  gap: 4px;
+  /* flex-wrap: nowrap; 기본값*/
+  flex-wrap: wrap;
+
+  .item{
+    width: 200px;
+    height: 200px;
+    background-color: dodgerblue;
+    /* margin: 4px; */
+    flex: 1;
+  }
+
+  .item:nth-child(1){
+    /* flex-grow: 1; */
+  }
+  .item:nth-child(2){
+    /* flex-grow: 2; */
+    align-self: flex-end;
+    order: -1;
+  }
+  .item:nth-child(3){
+    /* flex-grow: 1; */
+  }
+  
+}
