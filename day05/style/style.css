@@ -1,0 +1,25 @@
+.card{
+  overflow: hidden;
+}
+.card-image{
+  transition: all .5s;
+}
+.card:hover .card-image{
+  transform: scale(1.3);
+}
+
+.boxes{
+  width: 200px;
+  height: 200px;
+}
+
+.box01{
+  background-color: pink;
+  transition: all .5s ease;
+}
+
+.box01:hover{
+  /* margin-left: 100px; */
+  background-color: orange;
+  transform: translateZ(100px)
+}
