@@ -1,0 +1,62 @@
+.box-container{
+  border: 1px solid black;
+  display: inline-block;
+  margin: 3rem;
+}
+
+.box{
+  width: 200px;
+  height: 200px;
+  background-color: orange;
+  transition: all .5s;
+  /* transform-origin: center center; 방향의 축을 정할 수 있다. */
+}
+
+.box-container:hover .box{
+  /* transform: translate(100%, 100%); */
+  /* transform: scale(1.3); */
+  transform: skew(30deg);
+}
+
+.box2{
+  width: 200px;
+  height: 200px;
+  background-color: hotpink;
+  animation: move-x 600ms ease-out 3;
+  /* animation-direction: alternate;
+  animation-fill-mode: forwards;  2가자 같이 쓰면 자연스럽다.*/
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+  /* animation-play-state: paused; */
+}
+
+.box-container.active .box2{
+  animation-play-state: running;
+}
+
+
+@media(prefers-reduced-motion:reduce){
+  .box2{
+    animation: none;
+  }
+}
+
+@keyframes move-x{
+  to{
+    transform: translateX(100%);
+  }
+}
+
+
+/* 애니메이션 정의 */
+@keyframes fade-in{
+  from{
+    opacity: 0;
+    transform: translateY(0px);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(150px);
+  }
+
+}
