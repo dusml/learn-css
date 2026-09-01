@@ -1,0 +1,31 @@
+@use './abstracts/variables' as var;
+@use './components/button';
+@use './components/card';
+
+.course-section{
+  padding: var.$spacing-4xl var.$spacing-lg;
+  &__inner{
+    width: min(100%, 1120px);
+    margin: auto;
+  }
+  &__header{
+    margin: var.$spacing-md;
+  }
+  &__eyebrow{
+    display: inline-block;
+    margin-bottom: var.$spacing-sm;
+    color: var.$color-primary-dark;
+  }
+
+  &__title{
+    font-size: clamp(var.$body-2xl, 5vw, var.$body-3xl);
+    margin-bottom: var.$spacing-sm;
+  }
+  &__description{
+    max-width: 680px;
+    margin: 0;
+    color: var.$color-muted;
+    line-height: 1.7;
+  }
+}
+

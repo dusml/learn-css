@@ -1,0 +1,61 @@
+@use '../abstracts/variables' as var;
+@use '../abstracts/mixins';
+
+
+.course-list{
+  @include mixins.grid;
+  padding: var.$spacing-md;
+}
+
+
+.course-card {
+  border-radius: var.$radius-lg;
+  background: white;
+  transition: 0.3s;
+  border: 1px solid rgba(128, 128, 128, 0.411);
+  box-shadow: var.$shadow-card;
+  overflow: hidden;
+
+  &:hover { transform: translateY(-4px); }
+  
+
+  &__thumbnail{
+    @include mixins.flex-center;
+    padding: var.$spacing-2xl;
+    color:#fff;
+    font-size: var.$heading-m;
+  }
+
+  &__content{
+    padding: var.$spacing-md;
+    @include mixins.flex-col;
+    gap: var.$spacing-md;
+  }
+  &__category{
+    color: var.$color-primary-dark;
+  }
+  &__title {
+    color: var.$color-text;
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+  &__description {
+    margin-bottom: var.$spacing-md;
+    color: var.$color-muted;
+  }
+
+
+  
+}
+
+.course-card__thumbnail--html{
+    background-color: var.$color-secondary;
+  }
+
+.course-card__thumbnail--css{
+  background-color: var.$color-primary;
+}
+
+.course-card__thumbnail--sass{
+  background-color: var.$color-tertiary;
+}
