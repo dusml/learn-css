@@ -5,6 +5,9 @@
 .course-list{
   @include mixins.grid;
   padding: var.$spacing-md;
+  @include mixins.mobile{
+    grid-template-columns: 1fr;
+  }
 }
 
 
@@ -21,9 +24,26 @@
 
   &__thumbnail{
     @include mixins.flex-center;
-    padding: var.$spacing-2xl;
+    min-height: 190px;
+    padding: var.$spacing-md;
     color:#fff;
     font-size: var.$heading-m;
+    font-weight: 700;
+
+    &--html{
+      background: #FFAE00;
+      background: linear-gradient(124deg, rgba(255, 174, 0, 1) 0%, rgba(255, 246, 168, 1) 100%);
+    }
+
+    &--css{
+      background: #2563ED;
+      background: linear-gradient(124deg, rgba(37, 99, 237, 1) 0%, rgba(210, 226, 250, 1) 100%);
+    }
+
+    &--sass{
+      background: #FF9CE1;
+      background: linear-gradient(124deg,rgba(255, 120, 214, 1) 0%, rgba(255, 242, 252, 1) 100%);
+    }
   }
 
   &__content{
@@ -32,30 +52,19 @@
     gap: var.$spacing-md;
   }
   &__category{
-    color: var.$color-primary-dark;
+    color: var.$color-primary;
   }
   &__title {
     color: var.$color-text;
     font-size: 1.3rem;
     font-weight: bold;
+    line-height: 1.3;
   }
   &__description {
     margin-bottom: var.$spacing-md;
     color: var.$color-muted;
+    line-height: 1.5;
   }
-
-
-  
 }
 
-.course-card__thumbnail--html{
-    background-color: var.$color-secondary;
-  }
 
-.course-card__thumbnail--css{
-  background-color: var.$color-primary;
-}
-
-.course-card__thumbnail--sass{
-  background-color: var.$color-tertiary;
-}

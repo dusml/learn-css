@@ -3,9 +3,18 @@
 
 .button{
   display: inline-block;
-  background-color: var.$color-primary-dark;
-  color: #fff;
+  background-color: var.$color-primary;
+  color: var.$white;
   @include mixins.flex-center;
-  padding: var.$spacing-md var.$spacing-lg;
+  min-height: 44px;
   border-radius: var.$radius-md;
+  transition: background .5s ease;
+
+  &:hover{
+    background: var.$color-primary-dark;
+  }
+  &:focus-visible{
+    outline: 3px solid darkblue;
+    outline-offset: 3px;
+  }
 }
