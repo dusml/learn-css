@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "css를 학습하는 학습 문서입니다.",
   "scripts": {
-    "sass":"sass --watch day07/scss:day07/css"
+    "sass": "sass --watch day07/scss:day07/css"
   },
   "repository": {
     "type": "git",
@@ -23,5 +23,9 @@
   "homepage": "https://github.com/dusml/learn-css#readme",
   "devDependencies": {
     "sass": "^1.103.1"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.3.3",
+    "tailwindcss": "^4.3.3"
   }
 }
