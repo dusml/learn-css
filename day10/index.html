@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tailwind Trending Now Practice</title>
+  <link rel="stylesheet" href="./dist/output.css"/>
+</head>
+
+<body class="bg-[#09090b] text-white">
+  <main class="px-25 py-20">
+
+    <header class="mb-5">
+      <p class="text-violet-400 tracking-[0.3em] text-sm uppercase font-semibold">Tailwind CSS · Practice 02</p>
+
+      <h1 class="text-3xl tracking-tight font-black uppercase">Trending Now</h1>
+
+      <p class="text-zinc-300 text-sm leading-6">첫 번째 Movie Card에서 익힌 패턴을 활용해 여러 개의 콘텐츠 카드를 반응형 목록으로 확장합니다.</p>
+    </header>
+
+    <section>
+      <div class="flex justify-between items-end mb-8">
+        <div>
+          <p class="text-violet-400 tracking-[0.3em] text-sm uppercase font-semibold">Solo Practice</p>
+
+          <h2 class="text-2xl tracking-tight font-semibold text-zinc-200">지금 인기 있는 콘텐츠</h2>
+
+          <p class="text-zinc-300 text-sm leading-6">콘텐츠의 순위, 상태, 메타 정보, 설명과 Hover Action을 구성해보세요.</p>
+        </div>
+
+        <a href="#" class="text-sm text-zinc-300">전체 보기 →</a>
+      </div>
+
+      <div>
+
+        <article>
+          <div class="aspect-4/5 rounded-2xl overflow-hidden relative max-w-sm">
+            <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=700&q=85" alt="자연 풍경 콘텐츠" 
+            class="
+              h-full
+              w-full
+              object-fit-cover"
+            />
+
+            <div class="absolute inset-0 bg-linear-to-t from-black via-black/25 to-transparent"></div>
+
+            <div class="absolute left-4 top-4 flex gap-2 items-center">
+              <span class="px-2.5 py-1 bg-red-500 rounded uppercase text-xs">TOP 10</span>
+
+              <span class="text-xs bg-zinc-900/60 px-2.5 py-1 rounded font-semibold">NEW</span>
+            </div>
+
+            <div>
+              <span class="absolute left-0 bottom-0 px-5 py-30 font-black text-5xl italic">1</span>
+
+              <div>
+                <div>
+                  <button type="button" aria-label="Beyond Earth 재생"
+                    class="hidden"
+                  >▶</button>
+
+                  <button type="button" aria-label="Beyond Earth 찜하기">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div>
+              <h3 class="fon">Beyond Earth</h3>
+              <span>98%</span>
+            </div>
+
+            <div>
+              <span>2026</span>
+              <span>•</span>
+              <span>12부작</span>
+              <span>HD</span>
+            </div>
+
+            <p>미지의 행성에서 발견된 신호를 따라가는 탐사대의 이야기.</p>
+          </div>
+        </article>
+
+        <article>
+          <div>
+            <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=700&q=85" alt="사막 콘텐츠" />
+
+            <div></div>
+
+            <div>
+              <span>15+</span>
+            </div>
+
+            <div>
+              <span>2</span>
+
+              <div>
+                <div>
+                  <button type="button" aria-label="The Last Road 재생">▶</button>
+
+                  <button type="button" aria-label="The Last Road 찜하기">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div>
+              <h3>The Last Road</h3>
+              <span>94%</span>
+            </div>
+
+            <div>
+              <span>2025</span>
+              <span>•</span>
+              <span>2h 04m</span>
+              <span>4K</span>
+            </div>
+
+            <p>끝없이 이어지는 도로 위에서 서로의 비밀을 마주한 두 사람.</p>
+          </div>
+        </article>
+
+        <article>
+          <div>
+            <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=700&q=85" alt="산 콘텐츠" />
+
+            <div></div>
+
+            <div>
+              <span>DOCU</span>
+            </div>
+
+            <div>
+              <span>3</span>
+
+              <div>
+                <div>
+                  <button type="button" aria-label="Summit 재생">▶</button>
+
+                  <button type="button" aria-label="Summit 찜하기">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div>
+              <h3>Summit</h3>
+              <span>91%</span>
+            </div>
+
+            <div>
+              <span>2026</span>
+              <span>•</span>
+              <span>6 Episodes</span>
+              <span>HD</span>
+            </div>
+
+            <p>세계에서 가장 험한 산을 오르는 사람들의 선택과 기록.</p>
+          </div>
+        </article>
+
+        <article>
+          <div>
+            <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=700&q=85" alt="숲 콘텐츠" />
+
+            <div></div>
+
+            <div>
+              <span>TOP 10</span>
+            </div>
+
+            <div>
+              <span>4</span>
+
+              <div>
+                <div>
+                  <button type="button" aria-label="Silent Forest 재생">▶</button>
+
+                  <button type="button" aria-label="Silent Forest 찜하기">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div>
+              <h3>Silent Forest</h3>
+              <span>89%</span>
+            </div>
+
+            <div>
+              <span>2026</span>
+              <span>•</span>
+              <span>8부작</span>
+              <span>18+</span>
+            </div>
+
+            <p>지도에도 없는 숲에서 시작된 실종 사건을 추적하는 미스터리.</p>
+          </div>
+        </article>
+
+        <article>
+          <div>
+            <img src="https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=700&q=85" alt="해질녘 자연 콘텐츠" />
+
+            <div></div>
+
+            <div>
+              <span>NEW</span>
+            </div>
+
+            <div>
+              <span>5</span>
+
+              <div>
+                <div>
+                  <button type="button" aria-label="Unknown 재생">▶</button>
+
+                  <button type="button" aria-label="Unknown 찜하기">+</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div>
+              <h3>Unknown</h3>
+              <span>87%</span>
+            </div>
+
+            <div>
+              <span>2026</span>
+              <span>•</span>
+              <span>1h 48m</span>
+              <span>HD</span>
+            </div>
+
+            <p>기억을 잃은 채 깨어난 남자가 자신의 흔적을 역으로 추적한다.</p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+  </main>
+</body>
+</html>
